@@ -1,0 +1,29 @@
+Part 2
+
+1. What are the two types of Intents?
+There are implicit intent and explicit intent.
+
+
+Which of the two types of Intents are more secure?
+Explicit intent is more secure, because it can specify the receiving component and implicit
+intent will deliver to all components that have registered to receive that action.
+So it would be troublesome when you forget to check all components that registered and send
+this message to unwanted components.
+
+
+What type of Intent is shown on lines 69 to 73 of SecondFragment.kt?
+It is implicit intent. It is opening a web page.
+
+
+What type of Intent is shown on lines 68 to 70 of ThirdFragment.kt?
+It is explicit intent. It specifies first and second activities.
+
+
+Which of these two Intents is the proper way to do an Intent?
+The ThirdFragment.kt is using the right intent, because you want to open inside
+the app not a new window in the browser.
+
+I changed the implicit intent in SecondFragment.kt to be explicit intent. 
+Before, SecondFragment.kt is opening a new page in the browser, which is insecure and not right.
+Now, I start a new ProductScrollingActivity and use explicity intent to send user information along.
+And in ProductScrollingActivity.kt, it makes call to the right api '/api/index'.
