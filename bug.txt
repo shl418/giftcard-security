@@ -1,0 +1,36 @@
+Part 4: Oops, was that card yours?
+
+When a user wants to use a card, the application is telling the server (card.id, user_token).
+And the server can easily verify the authenticity of the token and remove the card, but what
+the server doesn't do is to verify whether this card belongs to that particular user.
+So a user can use a giftcard that belongs to others because the server fails to identify the
+ownership of this card.
+
+I verified this by manipulating two accounts.
+Account 1: Ace
+Account 2: Jack
+
+Ace has one card with id=206 and with the following contents:
+[
+  {
+    "data": "eyJtZXJjaGFudF9pZCI6ICJOWVUgQXBwYXJlbCBDYXJkIiwgImN1c3RvbWVyX2lkIjogIkFjZSIsICJ0b3RhbF92YWx1ZSI6IDIsICJyZWNvcmRzIjogW3sicmVjb3JkX3R5cGUiOiAiYW1vdW50X2NoYW5nZSIsICJhbW91bnRfYWRkZWQiOiAyMDAwLCAic2lnbmF0dXJlIjogIlsgaW5zZXJ0IGNyeXB0byBzaWduYXR1cmUgaGVyZSBdMzA4NjY0In1dfQ==",
+    "product": {
+      "product_id": 1,
+      "product_name": "NYU Apparel Card",
+      "product_image_path": "/images/product_1.jpg",
+      "recommended_price": 95,
+      "description": "Use this card to buy NYU Clothing!"
+    },
+    "amount": 2,
+    "used": false,
+    "id": 206
+  }
+]
+
+
+So when Jack logged in, and use api useCard(206, {Jack's Token}), the giftCard in Ace's account is used and Jack's giftCards stay intact.
+
+
+Solutions:
+The ownership can easily be verified by checking the foreign_key user_id in giftCard database. The server should compare the user_id of giftCard and user_id the corresponds to the Token. This card will only be used if they matches.
+
