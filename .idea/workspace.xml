@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d47f9bc-d9a5-4c67-84c8-c2e5e6471aa7" name="Default Changelist" comment="" />
+    <list default="true" id="2d47f9bc-d9a5-4c67-84c8-c2e5e6471aa7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assignment4App/GiftcardSite/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4App/GiftcardSite/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4App/GiftcardSite/app/src/main/java/com/example/giftcardsite/CardScrollingActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4App/GiftcardSite/app/src/main/java/com/example/giftcardsite/CardScrollingActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4App/GiftcardSite/app/src/main/java/com/example/giftcardsite/ProductScrollingActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4App/GiftcardSite/app/src/main/java/com/example/giftcardsite/ProductScrollingActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4App/GiftcardSite/app/src/main/java/com/example/giftcardsite/api/model/Reporter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4App/GiftcardSite/app/src/main/java/com/example/giftcardsite/api/model/Reporter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4App/GiftcardSite/app/src/main/java/com/example/giftcardsite/api/service/UserInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4App/GiftcardSite/app/src/main/java/com/example/giftcardsite/api/service/UserInfo.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
