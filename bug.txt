@@ -32,5 +32,7 @@ So when Jack logged in, and use api useCard(206, {Jack's Token}), the giftCard i
 
 
 Solutions:
-The ownership can easily be verified by checking the foreign_key user_id in giftCard database. The server should compare the user_id of giftCard and user_id the corresponds to the Token. This card will only be used if they matches.
+The ownership can easily be verified by checking the foreign_key user_id(or token) in giftCard database. 
+A card must have a user_id foreign key, because in getCard() function, we can get a list of cards with a user token as parameter.
+The server should compare the user_id(or token) of giftCard and user_id that corresponds to the Token. This card will only be used if they matches.
 
